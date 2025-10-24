@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21-October-2025</title>
+    <style>
+      :root {
+        --bg: #f7fafc;
+        --brand: blueviolet;
+        --accent: #2563eb;
+        --muted: #64748b;
+        --card: #ffffff;
+        --text: #0f172a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .card h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .container h1 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      header.site-header {
+        background: var(--brand);
+        color: white;
+        box-shadow: 0 4px 12px rgba(2, 6, 23, 0.06);
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: white;
+        margin-left: 70px;
+      }
+
+      .logo {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 6px;
+      }
+
+      .site-title {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        padding: 10px 14px;
+        color: white;
+        display: block;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+
+      .nav-item:hover,
+      .nav-item:focus {
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        outline: none;
+      }
+
+      .nav-item[aria-current="page"] {
+        background: white;
+        color: var(--brand);
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn {
+        padding: 8px 12px;
+        border-radius: 8px;
+        background-color: var(--accent);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn:hover {
+        background-color: #1e4ed8;
+      }
+
+      main {
+        padding: 28px 0;
+      }
+
+      .hero {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 6px 18px rgba(9, 45, 204, 0.04);
+      }
+
+      .hero h1 {
+        margin: 0 0 8px 0;
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      footer.site-footer {
+        margin-top: 28px;
+        background: transparent;
+      }
+
+      .footer-inner {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 14px;
+        text-align: center;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      @media (max-width: 800px) {
+        .nav-inner {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        nav {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .controls {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .nav-item {
+          padding: 8px 10px;
+          font-size: 0.9rem;
+        }
+        .logo {
+          width: 48px;
+          height: 48px;
+        }
+      }
+      #home-heading {
+        display: block;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        background-color: #26457062;
+        width: 50%;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .CEO-pic {
+        display: block;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .CEO-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="./home.html" aria-label="Home">
+          <img class="logo" src="./public/assets/logo.png" alt="logo" />
+          <span class="site-title">Cambodia Product Shop</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item" href="./home.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-item" href="./product.html" aria-current="page"
+                >Product</a
+              >
+            </li>
+            <li><a class="nav-item" href="./contact.html">Contact</a></li>
+            <li><a class="nav-item" href="./about.html">About</a></li>
+            <li><a class="nav-item" href="./index.html">Log Out</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="controls">
+          <a class="btn" href="./login.html">Login</a>
+        </div> -->
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="home-heading">
+        <h1>Welcome to Cambodia Product Shop</h1>
+      </div>
+      <section class="hero" role="region" aria-labelledby="home-heading">
+        <!--Promotion page-->
+        <div style="margin-bottom: 25px">
+          <h3>Vision Statement</h3>
+          <hr />
+          <p>
+            To become Cambodia’s leading marketplace for authentic local
+            products, empowering Cambodian artisans, farmers, and entrepreneurs
+            while promoting Cambodia’s cultural heritage to the world.
+          </p>
+          <h3 style="margin-top: 10px">Mission Statement</h3>
+          <hr />
+          <p>
+            Our mission is to provide customers with high-quality, locally made
+            Cambodian products through a trusted and convenient shopping
+            experience. We aim to support local communities, encourage
+            sustainable production, and showcase the creativity and
+            craftsmanship of Cambodia both locally and globally.
+          </p>
+        </div>
+        <div class="CEO-pic">
+          <img src="./public/assets/CEO.png" alt="" />
+        </div>
+        <div>
+          <h2 style="text-align: center">Founder & CEO's Message</h2>
+          <hr />
+          <p>
+            Dear Valued Customers, When I founded Cambodia Product Shop, my
+            vision was simple — to create a platform that celebrates the beauty,
+            creativity, and authenticity of Cambodian-made products. Cambodia is
+            rich in culture, tradition, and craftsmanship, yet many talented
+            local producers struggle to reach a wider market. Through this shop,
+            we aim to bridge that gap — connecting passionate local creators
+            with customers who appreciate genuine quality and cultural value.
+            Every purchase you make not only supports Cambodian artisans and
+            farmers but also contributes to the growth of our local economy and
+            the preservation of our cultural identity. Thank you for being part
+            of this journey to uplift Cambodian products and bring our nation’s
+            pride to every home, both locally and globally.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
