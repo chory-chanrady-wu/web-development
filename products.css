@@ -59,6 +59,10 @@ header.site-header {
   background: var(--brand);
   color: white;
   box-shadow: 0 4px 12px rgba(2, 6, 23, 0.06);
+  position: fixed; /* Keep the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .nav-inner {
@@ -151,20 +155,20 @@ nav {
 }
 
 main {
-  padding: 28px 0;
+  /* Add padding to offset the fixed header's height */
+  padding: 120px 0 28px;
 }
-/* 
+
 .hero {
   background: var(--card);
   border-radius: 12px;
-  padding: 15px;
+  padding: 100px 0;
   box-shadow: 0 6px 18px rgba(9, 45, 204, 0.04);
-} */
-
-.hero h1 {
+}
+/* .hero h1 {
   margin: 0 0 8px 0;
   font-size: 1.5rem;
-}
+} */
 
 .hero p {
   margin: 0;
